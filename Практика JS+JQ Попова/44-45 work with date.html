@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Уроки Попова</title>
+</head>
+<body>
+	
+<script>
+
+	//урок 44 === РАБОТА С ДАТАМИ В JavaScript
+
+	/*var forTime = new Date();
+	var year = forTime.getFullYear();
+	document.write("Сейчас год: " + year + "<br/>");
+	var month = forTime.getMonth();
+	document.write("Сейчас месяц: " + month + "<br/>");
+	var day = forTime.getDate();
+	document.write("Сейчас число: " + day + "<br/>");
+	var dayWeek = forTime.getDay();
+	document.write("Сейчас день: " + dayWeek + "<br/>");
+	var hour = forTime.getHours();
+	document.write("Сейчас час: " + hour + "<br/>");
+	var minutes = forTime.getMinutes();
+	document.write("Сейчас минута: " + minutes + "<br/>");
+	var seconds = forTime.getSeconds();
+	document.write("Сейчас секунда: " + seconds + "<br/>");*/
+
+	/*
+	Первое домашнее задание к 44-му уроку.
+
+	Ваша задача, используя методы объекта date, вывести на экран 
+	время в формате: час:минута:секунда (пример: 14:23:11)
+
+	При этом, если секунды и минуты попадают в интервал от 0 до 10, 
+	они должны выводиться с нулем  впереди.
+	т.е. вместо 18:7:3 у Вас должно выводиться 18:07:03
+	*/
+
+	/*var forTime = new Date();
+	var hours = forTime.getHours();
+	var minutes = forTime.getMinutes();
+	var seconds = forTime.getSeconds();
+
+	if (minutes < 10) {
+		minutes = "0" + minutes;
+	}
+	if (seconds < 10) {
+		seconds = "0" + seconds;
+	}
+
+	document.write("Сейчас время: " + hours + " : " + minutes + " : " + seconds);*/
+	
+	/*
+	Второе домашнее задание к 44-му уроку.
+
+	Помните, мы вычисляли, как вывести день недели.
+	Чтобы узнать день недели, используйте метод getDay() Он выдаст вам число от 0 до 6, 
+	где 0 это  восресенье, а 6 - суббота.
+
+	var day = now.getDay();
+	alert("На дворе день недели:" + day);
+
+	Но в результате мы получали всего лишь число - номер от 0 до 6, 
+	где ноль это воскресенье, а 6 суббота.
+
+	Так вот, ваша задача состоит в том, чтобы научиться выводить на экран текущий день 
+	недели в нормальном формате, т.е.  Понедельник, Вторник и т.д.
+
+	Подсказка: Создайте массив с названиями дней недели и используйте его при выводе. 
+	Если  необходимо, повторите урок  про создание  массивов и вывода из них информации. 
+	Помните, что дни недели в javascript начинаются с воскресенья.
+	*/
+	
+	/*var now = new Date();
+	var array = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+	document.write("На дворе день недели: " + array[now.getDay()]);*/
+
+	//урок 45 === пример по объекту Date()
+
+	// var now = new Date();
+	// var from1970 = (now.getTime() / (1000 * 60 * 60 * 24));
+	// document.write(Math.round(from1970));
+
+	// var ny = new Date(2018, 0, 1, 0, 0, 0);
+	// var from1970ToNy = (ny.getTime() / (1000 * 60 * 60 * 24));
+	// document.write("Новый год будет через: " + (Math.round(from1970ToNy) - Math.round(from1970)) + " дней." + "<br/>");
+	// var myDays = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+	// document.write("Это будет: " + myDays[ny.getDay()]);
+
+	// var test = new Date(1000*60*60*24);
+	// document.write(test);
+
+	/*
+	Домашнее задание к 45-му уроку.
+
+	Написать функцию, которая выводит на экран дату, которая наступит через n дней от сегодняшней. 
+	n - количество дней, которое нужно запросить у пользователя при загрузке страницы. 
+	Это значение передаете в функцию в качестве параметра.
+	При этом итоговую дату надо вывести в нормальном формате на русском языке. 
+	Например так (пример для ввода числа 79):
+
+	При этом пользователь  должен ввести число от 1 до 1000.
+	Если он не попал в интервал или ввел не число, то надо вывести ошибку. 
+	Проверку можно осуществлять за пределами функции.
+
+	Подсказка. Если задание кажется сложным, не спешите смотреть ответ. 
+	Постарайтесь разбить задачу на как можно более мелкие шажки и для 
+	начала попробуйте написать код просто для конкретного числа дней, 
+	вообще не используя функцию.
+
+	Через 79 дней будет вот такая дата: 
+	День недели: Воскресенье
+	Число: 10
+	Месяц: Октябрь
+	Год: 2010
+	*/
+	function myFun (n) {
+		var now = new Date();
+		var nowMilli = now.getTime();
+
+		var nowPlus79 = new Date(1000*60*60*24*n);
+		var milli79 = nowPlus79.getTime();
+
+		var summaMilli = nowMilli + milli79;
+		var itogMoment = new Date(summaMilli);
+
+		var myDays = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+		document.write("Через " + n + " дней будет вот такая дата: " + "<br/>"); 
+		document.write("День недели: " + myDays[itogMoment.getDay()] + "<br/>");
+		document.write("Число: " + itogMoment.getDate() + "<br/>");
+		document.write("Месяц: " + itogMoment.getMonth() + "<br/>");
+		document.write("Год: " + itogMoment.getFullYear() + "<br/>");
+	}
+
+
+	var userDay = prompt("Введите число от 1 до 1000");
+	if (userDay > 1000 || userDay < 1 || isNaN(userDay)) {
+		document.write("Ошибка, число не попало в диапазон чисел.");
+	} 
+	else {
+		myFun(userDay);
+	}
+
+
+
+
+</script>
+
+</body>
+</html> 

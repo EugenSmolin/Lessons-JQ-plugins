@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-4</title>
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 0;
+		}
+		.seconds {
+			font-size: 20px;
+			font-weight: bold;
+
+		}
+		button {
+			padding: 3px 15px;
+		}
+	</style>
+	
+	<div id="seconds" class="seconds">5</div>
+	<button onclick="timer()">start</button>
+
+	<script>
+		// Таймер обратного отчета
+		function timer() {
+			var _seconds = 5;
+			var int = setInterval(function() {
+				if (_seconds > 1) {
+					_seconds--;
+					seconds.innerText = _seconds;
+				}
+				else {
+					clearInterval(int);
+					seconds.innerText = '';
+					alert('+');// или какая-то функция вместо alert;
+				}
+			}, 1000);
+		}
+	</script>
+	
+
+ </body> 
+</html>

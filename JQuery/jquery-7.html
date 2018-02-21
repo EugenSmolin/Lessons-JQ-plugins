@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-7</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+			display: inline-block;
+		}
+		#result {
+			margin: 15px 0;
+			font-weight: bold;
+		}
+		button {
+			padding: 3px 15px;
+			border: 1px solid #777;
+		}
+		#img {
+			display: none;
+		}
+		h2 {
+			margin-bottom: 5px;
+		}
+		h2:hover {
+			color: #777;
+			cursor: pointer;
+		}
+		p {
+			margin-bottom: 15px;
+			display: none;
+		}
+		.active {
+			display: block;
+		}
+		.test div {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			border: 1px solid #777;
+			background-color: #999;
+		}
+
+	</style>
+	
+	<!-- Пример 1 -->
+	<!-- <div class="test">		
+		<button onclick="start()">start</button>
+		<div id="result"></div>
+		<div id="img">
+			<img src="gradient.jpg" alt="Градиент">
+			<img src="superman.jpg" alt="Супермен">
+		</div>
+	</div> -->
+
+	<!-- Пример 2 -->
+	<div class="test">
+		<article>
+			<h2>Heading 1</h2>
+			<p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quod, impedit nihil commodi nam vitae! Earum sint ratione fugiat ea, aut, reiciendis laboriosam blanditiis doloribus tenetur quis consequatur inventore accusamus aliquam nam eligendi iure praesentium amet? Obcaecati corporis, praesentium tempora saepe culpa eos iste, at.</p>
+		</article>
+		<article>
+			<h2>Heading 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta fuga pariatur, dolorum nesciunt, voluptatibus eveniet vero! Modi asperiores illo vel quo sapiente, ut dignissimos mollitia quasi aliquam, quam quisquam, possimus tenetur aut! Placeat ratione officia blanditiis quisquam sunt laudantium eligendi ipsum, delectus doloremque possimus.</p>
+		</article>
+		<article>
+			<h2>Heading 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iste suscipit est, facilis rerum possimus amet voluptas provident sapiente error, blanditiis vel maiores maxime, et qui ab laboriosam sed rem expedita culpa similique ipsam. Inventore nulla voluptate aliquam ut error beatae quae labore minus eligendi.</p>
+		</article>
+	</div>
+
+	<!-- Пример 3 -->
+	<div class="test">
+		<div class="in"></div>
+		<div class="out"></div>
+		<div class="to"></div>
+		<div class="toggle"></div>
+	</div>
+
+	<script>
+		
+		// Анимация <!-- Пример 1 -->
+		// function start() {
+		// 	$('#img img').hide(800); // Появление и исчезание элемента (Toggle)
+		// 	//$('#img img').show(800); // Появление и исчезание элемента (Toggle)
+		// }
+
+		// function start() {
+		// 	$('#img').slideToggle(800); // Появление и исчезание элемента (Toggle)
+		// 	$('#img').slideUp(800); // Исчезание элемента
+		// 	$('#img').slideDown(800); // Появление элемента
+		// }
+
+		//=========================//
+
+		// Аккардеон на Jquery <!-- Пример 2 -->
+		$('article h2').click(function() {
+			$(this).next().slideToggle();
+		});
+
+		//=========================//
+
+		// Свойство fadeIn(), fadeOut(), fadeTo(), fadeToggle() <!-- Пример 3 -->
+		$('.in').click(function() {
+			$(this).fadeIn(500); // появляется элемент
+		});
+		$('.out').click(function() {
+			$(this).fadeOut(500); // Изчезает элемент
+		});
+		$('.to').click(function() {
+			$(this).fadeTo(500, 0.5); // Изчезает до определенного цвета
+		});
+		$('.toggle').click(function() {
+			$(this).fadeToggle(500); // Появляется, изчезает элемент
+		});
+
+		// Отключение анимации
+		//Jquery.fx.off = true;
+		
+
+
+	</script>
+
+ </body> 
+</html>

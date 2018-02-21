@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lessons jQuery-2</title>
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<script>
+		// ============== PRELOADER ================ //
+		setTimeout("$('.preloader').hide(400)", 3000);
+		setTimeout("$('.main_block').fadeIn(400)", 3000);
+	</script>
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+		}
+
+		.preloader {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.8);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.loader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -25px;
+			border: 5px dotted #fff;
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+
+			-webkit-animation-name: loader;
+		    -moz-animation-name: loader;
+		    -o-animation-name: loader;
+		    animation-name: loader;
+		    /* Продолжительность анимации */
+		    -webkit-animation-duration: 5s;
+		    -moz-animation-duration: 5s;
+		    -o-animation-duration: 5s;
+		    animation-duration: 5s;
+		}
+		@keyframes loader {
+		    0% {transform: rotate(0deg);} 
+		    100% {transform: rotate(360deg);}
+		}
+
+		.main_block {
+			display: none;
+		}
+
+		.test {
+			color: #000;
+			font-weight: bold;
+			margin: 10px;
+		}
+
+		span.test {
+			display: block;
+			text-decoration: underline;
+		}
+	</style>
+	<div class="preloader"><span class="loader"></span></div>
+	
+	<div class="main_block">
+		<div class="test">div 1</div>
+		<div class="test">div 2</div>
+		<p class="test">paragraph 1</p>
+		<p class="test">paragraph 2</p>
+		<span class="test" title="test">span 1</span>
+		<span class="test" title="test">span 2</span>
+		<span class="test" title="test">span 3</span>
+	</div>
+
+	<script type="text/javascript">
+		// var test = $('div.test');
+		// for (i = 0; i < test.length; i++) {
+		// 	test.get(i).style.color = 'red';
+		// }
+
+		// $(document).ready(function() {
+		// 	$('div.test').css('color','blue');
+		// });
+		setTimeout("$('div.test').css('color','red')", 1000);
+		setTimeout("$('p.test').css('color','green')", 2000);
+		setTimeout("$('span[title]').css('color','blue').html('New span')", 3000);
+		
+		// span
+		// $(document).ready(function() {
+		// 	$('span[title]').css('color','green');
+		// });
+	</script>
+	
+	
+ </body> 
+</html>

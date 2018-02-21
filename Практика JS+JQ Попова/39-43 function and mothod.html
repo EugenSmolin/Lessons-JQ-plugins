@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Уроки Попова</title>
+</head>
+<body>
+	
+<script>
+
+	//урок 39 === ФУНКЦИИ И МЕТОДЫ ЧИСЛОВЫХ ОБЪЕКТОВ
+	//isNaN - это не число?
+
+	var fruit = "Апельсин";
+	var count = 10;
+
+	if (isNaN(fruit)) {
+		document.write("Это не число!");
+	} 
+	else {
+		document.write(fruit);
+	}
+
+	/*
+	Домашнее задание к 39-му уроку.
+
+	Написать функцию, которая получает в качестве параметра массив, 
+	затем перебирает все его элементы и выводит на экран, какая 
+	информация содержится в каждом элементе: число или нечисло.
+	Массив для примера: var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+	*/
+
+	var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+
+	function myFun (anyArray) {
+		for (var i = 0; i < anyArray.length; i++) {
+
+			if (isNaN(anyArray[i])) {
+				document.write("Это не число! " + anyArray[i] + "<br/>");
+			} 
+			else {
+				document.write("Это число! " + anyArray[i] + "<br/>");
+			}
+		}
+	}
+
+	myFun(randSimbol);
+
+	//урок 40 === ФУНКЦИИ parseInt(), parseFloat(), Number()
+
+	var count = "35";
+	var newcount = parseInt(count);
+	var test = 65;
+	var result = newcount + test;
+	document.write(result);
+
+	//parseFloat() - преобразовует и десятичные и сотые;
+
+	//Number() - преобразовует строку в число;
+	// var bool = true;
+	// var result = Number(bool);
+	// document.write(result);
+	
+	/*
+	Домашнее задание к 40-му уроку.
+
+	Напишите функцию, которая получает в качестве параметра массив и перебирает 
+	его на предмет преобразования строк, начинающихся с числа в обычные числа. 
+	В результате работы функции, массив должен изменить свои значения на полностью числовые.
+
+	Массив для задания:
+
+	var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+	*/
+
+	var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+
+	function myFun (anyArray) {
+		for (var i = 0; i < anyArray.length; i++) {
+			anyArray[i] = parseInt(anyArray[i]);
+			document.write("Количество: " + myArray[i] + "<br/>");
+		}
+	}
+
+	myFun(myArray);
+
+	//урок 41 === МЕТОД toFixed()
+
+	var price = 10.30;
+	document.write(price.toFixed(2));
+
+	/*
+	Домашнее задание к 41-му уроку.
+
+	Напишите функцию, которая получает в качестве параметра массив и перебирает его на предмет 
+	преобразования чисел из простых, в такие, у которых есть два знака после запятой., т.е., если 
+	в исходном массиве было число 11, то на выходе должно быть 11.00. 
+
+	В результате работы функции массив должен изменить свои значения.
+
+	Массив для примера:
+	var randSimbol = [10.5, 15, 112, 77.6];
+
+	*/
+
+	var randSimbol = [10.5, 15, 112, 77.6];
+
+	function myFun (anyArray) {
+		for (var i = 0; i < anyArray.length; i++) {
+			anyArray[i] = anyArray[i].toFixed(2);
+			document.write(anyArray[i] + "<br/>")
+		}
+	}
+
+	myFun(randSimbol);
+
+	//урок 42 === ОБЪЕКТ Math и его методы round() ceil() floor()
+
+	//round - округляет в большую или меньшую сторону;
+
+	var age = 56.89;
+	age = Math.round(age);
+	document.write(age);
+
+	/*
+	Домашнее задание к 42-му уроку.
+
+	Ваша задача написать функцию, которая принимает два параметра.
+	1. Массив, состоящий из чисел с дробями. 
+	2. Метод округления "round", "ceil" или "floor".
+
+	На выходе функция должна выводить этот же массив, но при этом все элементы массива, 
+	должны быть  округлены с помощью указанного во втором параметре метода объекта Math.
+
+	Исходный массив:
+	var numberArray = [34.82, 12.90, 17.01, 78.51];
+	*/
+
+	var numberArray = [34.82, 12.90, 17.01, 78.51];
+
+	function myFun (anyArray, method) {
+		for (var i = 0; i < anyArray.length; i++) {
+			if (method == "round") {
+				anyArray[i] = Math.round(anyArray[i]);
+				document.write("Число: " + anyArray[i] + "<br>");
+			} 
+			else if (method == "ceil") {
+				anyArray[i] = Math.ceil(anyArray[i]);
+				document.write("Число: " + anyArray[i] + "<br>");
+			} 
+			else if (method == "floor") {
+				anyArray[i] = Math.floor(anyArray[i]);
+				document.write("Число: " + anyArray[i] + "<br>");
+			} 
+		}
+	}
+
+	myFun(numberArray, "floor");
+
+	//урок 43 === ОБЪЕКТ Math и его метод rondom()
+
+	var rand = Math.round(Math.random() * 100);
+	document.write(rand);
+
+	function myRandom (from, to) {
+		return Math.floor((Math.random() * (to - from + 1)) + from);
+	}
+
+	var rand = myRandom (1, 100);
+	document.write(rand);
+
+	/*
+	Домашнее задание к 43-му уроку.
+
+	Вам нужно создать функцию, которая будет принимать три параметра.
+	1. Массив, состоящий из 10 пустых элементов.
+	2. Начальное значение интервала
+	3. Конечное значение интервала.
+
+	Функция должна заполнить пустой массив случайными числами в указанном диапазоне и вывести 
+	содержимое массива на экран.
+
+	Исходный массив для примера:
+	var randomArray = new Array(10);
+
+	*/
+	
+	function myRandom (from, to) {
+		return Math.floor((Math.random() * (to - from + 1)) + from);
+	}
+
+	var randomArray = new Array(10);
+	
+	function myFun (anyArray, begin, end) {
+		for (var i = 0; i < anyArray.length; i++) {
+			anyArray[i] = myRandom(begin, end);
+			document.write(anyArray[i] + "<br/>");
+		}
+	}
+
+	var start = 0;
+	var finish = 50;
+
+	document.write("Число от " + start + " до " + finish + "<br/>");
+	myFun(randomArray, start, finish);
+
+	
+
+	
+
+</script>
+</body>
+</html> 

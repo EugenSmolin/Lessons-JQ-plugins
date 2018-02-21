@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preloader</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			/*padding: 15px;*/
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+			display: inline-block;
+		}
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			background-color: #000;
+			transition: all .5s linear;
+			opacity: 1;
+			visibility: visible;
+			z-index: 2;
+		}
+		.loader {
+			width: 75px;
+			height: 75px;
+			border: 10px solid #fff;
+			border-top: 10px solid #777;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			animation: 1s spin infinite linear;
+		}
+		.done {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		@keyframes spin {
+			from {
+				transform: translate(-50%,-50%) rotate(0deg);
+			}
+			to {
+				transform:  translate(-50%,-50%) rotate(360deg);
+			}
+		}
+	</style>	
+
+		<div class="test">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique totam minus vel est blanditiis sit rerum, reprehenderit autem enim, optio nobis eos odio doloremque molestias, rem officiis distinctio animi natus nulla perferendis voluptates sed explicabo quae amet consectetur? Possimus eos quasi iure placeat similique, odio suscipit consequatur voluptates. Qui nostrum in eum commodi neque! Alias quasi nemo eligendi recusandae impedit nisi magni asperiores incidunt doloremque, a expedita cupiditate deleniti reiciendis iusto tenetur, esse! Ullam quasi fugit animi laboriosam repudiandae quidem delectus autem, non consectetur repellat recusandae dolorem, sapiente, distinctio laudantium maiores voluptates. Voluptatibus nulla quos, earum! Non rem sapiente aut.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab atque illum eaque quae molestiae, facere sequi quas asperiores quo minus sint sed fugit rem suscipit cupiditate, nobis nostrum optio! Deserunt eum eius, ullam adipisci quaerat saepe, dolor, totam debitis, fuga quidem voluptates libero! Voluptatem sequi officiis consequatur adipisci ut perferendis possimus itaque velit, incidunt vitae quas ratione molestiae, illo reprehenderit tenetur id architecto aut et eveniet a ad. Repudiandae deleniti voluptates similique ad ipsum esse architecto nisi, consequuntur cupiditate voluptate sed unde harum vel placeat tempora! Nobis incidunt officiis facere possimus. Magni corporis facilis omnis sed a eligendi fuga.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe temporibus nulla hic dolore unde, iusto laudantium neque, ex error voluptate, totam. Consectetur enim molestiae excepturi incidunt cum nulla. Temporibus numquam distinctio at quos doloribus culpa deserunt ea assumenda velit impedit, et, nisi quis quod nulla quasi consectetur est ut vel, delectus repudiandae nam. Mollitia tenetur delectus voluptate consectetur, nulla corporis enim, quisquam aut perferendis dolorum voluptatem? Beatae quae hic asperiores recusandae excepturi atque, placeat molestias ratione enim, quo nulla qui. Asperiores necessitatibus corrupti omnis. Eaque libero saepe minus nam reiciendis excepturi laborum possimus hic assumenda quo voluptatum temporibus, adipisci voluptas.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sequi, magni molestias praesentium enim aperiam voluptas. Asperiores eius minus odio nostrum corporis ut itaque dolore aliquid eveniet dolorum quae quam dicta quo molestias reprehenderit distinctio, ducimus voluptate in cupiditate tenetur tempora, officiis, pariatur! Debitis inventore ducimus, id at veritatis nam reiciendis aspernatur, fuga fugiat necessitatibus veniam ratione hic, recusandae temporibus pariatur expedita reprehenderit quidem molestias assumenda. Illum ex numquam dolore vero officiis asperiores in sit porro, voluptas, maiores tempore sint minus doloremque aut voluptates. Rerum eos obcaecati, iusto sed repellendus dolorem officiis, ipsum sequi quos repudiandae facere optio atque et.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus, excepturi tempore non ratione consectetur ducimus error repellat, facere fugiat dolorum quod consequatur porro fugit totam, natus sapiente soluta aliquid iusto. Explicabo ea voluptas vel nulla praesentium illum facilis commodi dolorum, quisquam perferendis consequatur quas voluptate perspiciatis unde quis culpa sequi, nihil in, officiis possimus nobis, laboriosam itaque optio! Possimus accusamus quas nobis dolore autem, laborum amet, laboriosam iste odio voluptatem eius facere blanditiis, ex mollitia minima maxime perferendis tempore hic eveniet! Labore autem officiis quis provident tempore reiciendis fugiat, aliquid, rem accusantium totam vero commodi?</p>
+		</div>
+
+		<div id="preloader" class="preloader">
+			<div class="loader"></div>
+		</div>
+	
+	<script>
+		document.body.onload = function() {
+			setTimeout(function() {
+				var preloader = document.getElementById('preloader');
+				if(!preloader.classList.contains('done')) {
+					preloader.classList.add('done');
+				}
+			}, 2000); 
+		}
+	</script>
+
+ </body> 
+</html>

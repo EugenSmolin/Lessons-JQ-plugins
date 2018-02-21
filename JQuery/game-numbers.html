@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Numbers</title>
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			box-sizing: border-box;
+			font-family: 'Tahoma';
+		}
+		body {
+			/*background-image: url('bg.jpg');*/
+			background-color: rgba(0,0,0,.2);
+		}
+		div {
+			margin-bottom: 20px;
+		}
+		.block {
+			width: 300px;
+			border: 2px solid #B8B8B2;
+			padding: 10px;
+			font-size: 16px;
+			color: #000;
+			background-color: #EBEBE4;
+			display: inline-block;
+			overflow: hidden;
+			position: absolute;
+			top: calc(50% - 200px);
+			left: calc(50% - 150px);
+			box-shadow: 0 0 30px #999;
+		}
+		h3 {
+			color: #999;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		#num_up, #test, #sec {
+			color: green;
+			font-weight: bold;
+			border: 1px solid #B8B8B2;
+			width: 100%;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+		}
+		#test {
+			color: red;
+		}
+		#sec {
+			color: #000;
+			font-weight: normal;
+		}
+		#seconds {
+			font-weight: bold;
+			font-size: 18px;
+		}
+		input {
+			width: 140px;
+			height: 30px;
+			text-align: center;
+			display: inline-block;
+		}
+		.button_block {
+			width: 100%;
+			text-align: center;
+		}
+		button {
+			display: inline-block;
+			padding: 2px 10px;
+			border: 1px solid #B8B8B2;
+			margin: 0 auto;
+		}
+		button:hover {
+			border: 1px solid #000;
+			cursor: pointer;
+		}
+		#dis {
+			color: #B8B8B2;
+		}
+		#up {
+			position: absolute;
+			top: 0px;
+			left: -300px;/*-148*/
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: all .5s linear;
+			background-color: #B8B8B2;
+			/*box-shadow: inset 0 0 30px #999;*/
+		}
+		#down {
+			position: absolute;
+			top: 0px;
+			right: -300px;/*-148*/
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: all .5s linear;
+			background-color: #B8B8B2;
+			/*box-shadow: inset 0 0 30px #999;*/
+		}
+		.text {
+			position: absolute;
+			top: -300px;
+			left: 0;
+			display: block;
+			width: 100%;
+			transition: all .5s linear;
+			color: #fff;
+			text-align: center;
+			font-size: 40px;
+			line-height: 275px;
+			font-family: 'Tahoma';
+			text-shadow: 0 0 10px #999;
+		}
+	</style>
+	
+	<div class="block">
+		<h3>Угадай число от 0 до 10</h3>
+		<div>
+			<input id="numb" placeholder="Введите число">
+			<button onclick="start()" id="dis" disabled>Подтвердить</button>
+		</div>
+		<div id="num_up"></div>
+		<div id="test"></div>
+		<div id="sec">Осталось: <span id="seconds">20</span> секунд</div>
+		<div class="button_block">
+			<button id="timer" onclick="timer()">Запустить</button>
+		</div>
+		<!-- popup -->
+		<div id="up"></div>
+		<div id="down"></div>
+		<div class="text" id="text">Вы проиграли!</div>
+
+	</div>
+
+	
+
+	<script type="text/javascript">
+		var random = Math.round(Math.random() * 10);
+		console.log(random);
+
+		var count = 5;
+
+		function win() {
+			text.innerText = 'Вы выиграли!';
+			document.getElementById('up').style.left = -148 + 'px';
+			document.getElementById('down').style.right = -148 + 'px';
+			document.getElementById('text').style.top = 0 + 'px';
+		}
+		function lose() {
+			document.getElementById('up').style.left = -148 + 'px';
+			document.getElementById('down').style.right = -148 + 'px';
+			document.getElementById('text').style.top = 0 + 'px';
+		}
+
+		function start() {
+			if (count >= 2) {
+				var numb = document.getElementById('numb').value;
+
+				if (numb < 0 || numb > 10) {
+					alert('Число должно быть от 0 до 10!');
+				}
+				else {
+					if (numb == random) {
+						win();
+						return;
+					}
+					else {
+						if (numb < random) {
+							num_up.innerText = 'Больше';
+						}
+						else if (numb > random) {
+							num_up.innerText = 'Меньше';
+						}
+					}
+				}
+				count = count - 1;
+				test.innerText = 'Осталось попыток: ' + count;
+			}
+			else if (count == 1) {
+				lose();
+			}
+		}
+
+		function timer() {
+			// Активирует кнопку "Подтвердить"
+			document.getElementById('dis').disabled = false;
+			document.getElementById('dis').style.color = '#000';
+			// Деактивирует кнопку "Запустить"
+			document.getElementById('timer').disabled = true;
+			document.getElementById('timer').style.color = '#B8B8B2';
+
+			var _seconds = 20;//устанавливаем таймер (в секундах)
+			var int = setInterval(function() {
+				if (_seconds > 1) {
+					_seconds--;
+					seconds.innerText = _seconds;
+				}
+				else {
+					clearInterval(int);
+					lose();
+				}
+			}, 1000);
+			return;
+		}
+	</script>
+	
+ </body> 
+</html>

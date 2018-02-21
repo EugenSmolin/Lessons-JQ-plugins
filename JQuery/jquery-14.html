@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-14</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		.test div {
+			margin-bottom: 10px;
+		}
+		p {
+			color: red;
+			font-weight: bold;
+		}
+	</style>	
+	
+
+	
+	<div class="test">
+		<div><p>Lorem ipsum dolor sit amet.</p></div>
+		<div><input id="number" type="text"></div>
+		<div><button id="button" type="button">start</button></div>
+	</div>
+
+
+
+	<script>
+		
+		$(document).ready(function () {
+			// узнает свойство
+			// $('#button').click(function(){
+			// 	var $par = $('p').css('fontSize');
+			// 	alert($par);
+			// });
+
+			// меняем размер шрифта
+			$('#button').click(function() {
+				var $number = $('#number').val();
+				$('p').css('fontSize', $number + 'px');
+			});
+
+			// 
+			$('#button').click(function(){
+				$('#par4').css('color','red');
+				$('#par5').css('fontSize','25px');
+				$('#par6').css({
+					fontFamily:'Verdana', 
+					fontSize:'33px'
+				});
+				$('#par7').css({
+					fontWeight:'bold',
+					fontFamily:'TimesNewRoman',
+					color:'red'
+				});
+		    });
+		});
+
+	</script>
+
+ </body> 
+</html>

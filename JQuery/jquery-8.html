@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-8</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		h2 {
+			margin-bottom: 5px;
+		}
+		/*p {
+			margin-bottom: 15px;
+		}*/
+		button {
+			padding: 5px 25px;
+			font-weight: bold;
+			border: 1px solid #777;
+		}
+		button:hover {
+			cursor: pointer;
+		}
+		.new {
+			margin-bottom: 50px;
+		}
+		article {
+			border: 1px solid #888;
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+		
+	</style>	
+
+	<!-- Пример 1 -->
+	<!-- <div class="test">
+		<div class="detach">DETACH</div>
+		<article class="first">
+			<h2>Heading 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quod, impedit nihil commodi nam vitae! Earum sint ratione fugiat ea, aut, reiciendis laboriosam blanditiis doloribus tenetur quis consequatur inventore accusamus aliquam nam eligendi iure praesentium amet? Obcaecati corporis, praesentium tempora saepe culpa eos iste, at.</p>
+		</article>
+		<article class="second">
+			<h2>Heading 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta fuga pariatur, dolorum nesciunt, voluptatibus eveniet vero! Modi asperiores illo vel quo sapiente, ut dignissimos mollitia quasi aliquam, quam quisquam, possimus tenetur aut! Placeat ratione officia blanditiis quisquam sunt laudantium eligendi ipsum, delectus doloremque possimus.</p>
+		</article>
+		<article class="third">
+			<h2>Heading 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iste suscipit est, facilis rerum possimus amet voluptas provident sapiente error, blanditiis vel maiores maxime, et qui ab laboriosam sed rem expedita culpa similique ipsam. Inventore nulla voluptate aliquam ut error beatae quae labore minus eligendi.</p>
+		</article>
+	</div>
+	<div>
+		<button onclick="start()" type="button">click</button>
+	</div> -->
+
+	<div class="test">
+		<div>
+			<button id="getp">paragraph</button>
+			<button id="getd">document</button>
+			<button id="getw">window</button>
+		</div>
+		<div class="text">&nbsp;</div>
+		<p>Jackie</p>
+	</div>
+
+	<script>
+		// Добавление элементов 
+		// function start() {
+		// 	//$('p').after('<hr/>');
+		// 	//$('<hr/>').insertAfter('p'); // тоже самое только обратно
+		// 	//$('p').before('<hr/>');
+		// 	//$('p').append('<hr/>');
+		// 	$('<p>hello</p>').prependTo('article');
+		// }
+		
+		// Замена элементов
+		//function start() {
+			//$('.second').replaceWith('The true and the lie');
+			//$('<h1>The true and the lie</h1>').replaceAll('article');
+			//$('article').wrap('<div class="new"></div>'); // Оборачиваем поверх все элементы в отдельный блок
+			//$('article').wrapAll('<div class="new"></div>'); // Оборачиваем все элементы в один блок
+			//$('article').wrapInner('<div class="new"></div>'); // Оборачиваем внутрь все элементы в отдельный блок
+			//$('.first').clone().appendTo('.test'); // Клонирует элемент и вставляет его в конец блока
+		//}
+
+		// Добавление и удаление элементов
+		// var p;
+		// function start() {
+		// 	if(p) {
+		// 		p.prependTo('.test');
+		// 		p = null;
+		// 	}
+		// 	else {
+		// 		p = $('.detach').detach();
+		// 	}
+		// }
+
+		//function start() {
+			// Узнаем кординаты элемента
+			// var p = $('.first');
+			// var offset = p.offset();
+			// p.html("left: " + offset.left + "<br/>" + "top: " + offset.top);
+
+			//$('.third').offset({top:0, left:0}); // Позиционирование элемента относительно body
+
+			// Позиционирование элемента относительно родителя
+			// var p = $('.first');
+			// var position = p.position();
+			// p.html("left: " + position.left + "<br/>" + "top: " + position.top);
+
+			//$('.third').position({top:50, left:50}); // Позиционирование элемента относительно body
+		//}
+
+		function showHeight(element,height) {
+			$('.text').text("Height of the " + element + " is " + height);
+		}
+		$('#getp').click(function() {
+			showHeight("paragraph",$('p').height());
+		});
+		$('#getd').click(function() {
+			showHeight("document",$(document).height());
+		});
+		$('#getw').click(function() {
+			showHeight("window",$(window).height());
+		});
+
+	</script>
+
+ </body> 
+</html>

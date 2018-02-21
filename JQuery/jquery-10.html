@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-10</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		.test div {
+			margin-bottom: 10px;
+		}
+		#square {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			padding: 5px;
+		}
+		#block_hide {
+			padding: 5px;
+			border: 1px solid #000;
+			display: inline-block;
+			width: 200px;
+			cursor: pointer;
+		}
+		.block_animate {
+			padding: 2px;
+			width: 85px;
+			height: 36px;
+			border-radius: 50px;
+			border: 1px solid #000;
+			display: inline-block;
+		}
+		#animate {
+			background-color: red;
+			border: 1px solid #000;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			position: relative;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+		}
+	</style>	
+	
+
+	
+	<div class="test">
+		<div id="square">Щелкните где-нибудь в данном поле.</div>
+		<div id="coord" style="display:none">
+			Курсор мыши во время того как, произошло событие находился на следующих координатах:
+			<br />
+			<b>X: <span id="x"></span></b>
+			<b>Y: <span id="y"></span></b> 
+		</div>
+
+	</div>
+
+	<div class="test">
+		<div id="block_hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, assumenda.</div>
+	</div>
+
+	<div class="test">
+		<div class="block_animate"><div id="animate"></div></div>
+		<p id="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In corporis, perferendis minus cum nobis, esse dolor eaque eligendi blanditiis error sit fugiat pariatur. Cumque explicabo repudiandae neque, incidunt ratione ad.</p>
+	</div>
+
+	<script>
+		
+		$(document).ready(function () {
+			//event и его методы 
+			$('#square').click(function(event) {
+				$('#coord').show();
+				$('#x').html(event.pageX);
+				$('#y').html(event.pageY);
+			});
+
+			// fadeOut, fadeIn(время,делает какую-то функцию)
+			$('#block_hide').click(function() {
+				$(this).fadeOut(1000, function() {
+					var result = confirm('Вернуть блок?');
+					if (result == true) {
+						$(this).fadeIn(3000);
+					}
+					else {
+						alert('Ссори!');
+					}
+				});
+			});
+
+			// анимация
+			$('#animate').click(function() {
+				$(this).animate({
+					left: '50px'
+					},1000,function(){
+						$(this).css('backgroundColor','green');
+						$('#p').css('color','blue');
+				});
+			});
+			$('#animate').dblclick(function() {
+				$(this).animate({
+					left: '0'
+					},1000,function(){
+						$(this).css('backgroundColor','red');
+						$('#p').css('color','black');
+				});
+			});
+		});
+
+	</script>
+
+ </body> 
+</html>

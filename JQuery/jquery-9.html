@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-9</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		.test div {
+			margin-bottom: 10px;
+		}
+		.focus{
+			position: relative;
+			padding: 5px 25px;
+			border: 1px solid #000;
+			color: red;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		.window {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 150px;
+			border: 1px solid #000;
+			padding: 5px;
+			background-color: #fff;
+			display: none;
+			font-size: 14px;
+			color: #000;
+		} 
+		input {
+			padding: 5px;
+		}
+	</style>	
+
+	
+	<div class="test">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatem.</div>
+		<a href="http://google.com">link google</a>
+		<a href="https://">link</a>
+		<a href="https://">link</a>
+		<div>
+			<button id="button">Получить</button>
+			<div class="focus">
+				focus
+				<div class="window">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, alias.</div>
+			</div>
+			<input type="text" id="el1" value="this">
+			<select name="" id="select">
+				<option value="" data-color="red">red border</option>
+				<option value="" data-color="green">green border</option>
+				<option value="" data-color="grey">grey border</option>
+			</select>
+		</div>
+	</div>
+
+	<script>
+		// убрать конфликт (заменить знак $ на другой, свой)
+		// var znak = jQuery.noConflict();
+		
+		// znak('#button').click(function() {
+		// 	alert('Ok!');
+		// });
+
+		$('#button').on('click', function(){
+			$('a').css('color','red');
+			$('[href="http://google.com"]').css('color','green');
+		});
+
+
+		$('.focus').mouseover(function(){ 
+			$('.window').show('slow');
+		}); // <- наводя на элемент он выполняет действие
+		$('.focus').mouseout(function(){
+			$('.window').hide('slow');
+		}); // <- выходя за елемент он выполняет действие
+
+
+		$("#el1").focus(function(){ 
+	       $(this).attr("value","");
+	       $(this).css("border","2px solid red");
+	    }); // <- кликая на елемент он выполняет действие обысно это input
+	    $("#el1").blur(function(){ 
+	       $(this).attr("value","this");
+	       $(this).css("border","2px dotted green");
+	    }); // <- кликая за елемент он выполняет действие
+
+	    // === Получает изменения элемента === //
+	    $("#select").change(function(){
+	    	$color = $('select#select option:selected').attr('data-color');
+
+	    	if($color == 'red') {
+	    		$('#el1').css('border','2px solid red');
+	    	}
+	    	if($color == 'green') {
+	    		$('#el1').css('border','2px solid green');
+	    	}
+	    	if($color == 'grey') {
+	    		$('#el1').css('border','2px solid grey');
+	    	}
+	    }); // <- если элемент изменен, то делает действие
+
+	</script>
+
+ </body> 
+</html>

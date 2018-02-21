@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hover-effect</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+			display: inline-block;
+		}
+		.img {
+			width: 400px;
+			/*overflow: hidden;*/
+		}
+		img {
+			width: 100%;
+			transition: all .3s linear;
+			cursor: pointer;
+		}
+		/*img:hover {
+			filter: grayscale(.75);
+		}*/
+		.hover {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1000px;
+			transform: translate(-50%,-50%);
+ 			/*filter: grayscale(.75);*/
+ 			filter: drop-shadow(0px 0px 10px #000);
+		}
+		.button {
+			position: relative;
+			top: 0;
+			padding: 5px 25px;
+			border: 1px solid #888;
+			display: inline-block;
+			margin-top: 15px;
+			cursor: pointer;
+			transition: .2s linear;
+		}
+		.button:hover {
+			position: relative;
+			top: -5px;
+			box-shadow: 0 5px 10px #555;
+		}
+	</style>	
+
+		<div class="test">
+			<div class="img">
+				<img src="wether.jpg" alt="Природа">
+			</div>
+
+			<span class="button" id="start">button</span>
+		</div>
+	
+	<script>
+		$('#start').click(function() {
+			$('img').toggleClass('hover');
+		});
+	</script>
+
+ </body> 
+</html>

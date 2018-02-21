@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-6</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+			display: inline-block;
+		}
+		input {
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+		#array {
+			margin-bottom: 15px;
+			padding: 5px;
+			border: 1px solid green;
+		}
+		#result {
+			margin-bottom: 15px;
+			font-weight: bold;
+		}
+		button {
+			padding: 3px 15px;
+		}
+		.add_class {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	</style>
+	
+	<div class="test">
+		<input id="input_text" type="text" placeholder="Введите текст">
+		<div id="img">
+			<img src="gradient.jpg" alt="Градиент">
+		</div>
+		<div id="result"></div>
+		<button onclick="start()">start</button>
+		<div><a href="jquery-5.html">Link</a></div>
+	</div>
+
+	<script>
+		// Запись css
+		// $('#result').css({
+		// 	fontSize: '20px',
+		// 	textAlign: 'center',
+		// 	color: 'blue'
+		// });
+
+		// $('button').css({
+		// 	'text-align': 'center',
+		// 	'color': 'red'
+		// });
+
+		// Добавление, удаление классов
+		// function start() {
+		// 	//$('#result').addClass('add_class');
+		// 	//$('#result').removeClass('add_class');
+		// 	//$('#result').toggleClass('add_class');
+		// }
+
+		// Изменение по атрибуту
+		// function start() {
+		// 	$('#img img').attr('src','superman.jpg');
+		// 	//$('#img img').attr('alt','Супермен');
+		// }
+
+		// Вешать обработчики
+		// $('a').click(function(event) {
+		// 	alert('+');
+		// 	//event.preventDefault();// Останавливает переход по ссылке
+		// 	//event.stopPropagation();// Запрещает дальше срабатывать другим обработчикам
+		// 	return false;// Тоже самое => Запрещает дальше срабатывать другим обработчикам
+		// });
+		// $('.test').click(function(event) {
+		// 	alert('+++++++++++++++');
+		// });
+
+		// Быстрый вывод информации с поля ввода
+		// $('#input_text').keyup(function() {
+		// 	var value = $(this).val();
+		// 	$('#result').text(value);
+		// });
+
+
+	</script>
+
+ </body> 
+</html>

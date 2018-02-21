@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-12</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			margin-bottom: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		.test div {
+			margin-bottom: 10px;
+		}
+		input, p {
+			margin-bottom: 10px;
+		}
+	</style>	
+	
+
+	
+	<div class="test">
+		<div>
+			<p id="par1">JavaScript библиотека </p>
+			<input id="but1" type="button" value="Добавить содержимое перед текстом" />
+			<input id="but2" type="button" value="Добавить содержимое после текста" />
+			<input id="but3" type="button" value="Добавить новый абзац в конце документа" />
+		</div>
+		<div>
+			<a id="anchor1" href="http://www.wisdomweb.ru/">wisdomweb.ru</a>
+			<input id="but4" type="button" value="Узнать содержимое атрибута href" />
+			<input id="but5" type="button" value="Изменить содержимое атрибута href" />
+			<input id="but6" type="button" value="Удалить атрибут href" />
+		</div>
+		<div>
+			<p id="par4">Lorem ipsum dolor sit amet.</p>
+			<p id="par5">Lorem ipsum dolor sit amet.</p>
+			<p id="par6">Lorem ipsum dolor sit amet.</p>
+			<input id="but7" type="button" value="par4" />
+			<input id="but8" type="button" value="par5" />
+			<input id="but9" type="button" value="par6" />
+		</div>
+	</div>
+
+	<script>
+		
+		$(document).ready(function () {
+			// метод prepend || append
+			$('#but1').click(function(){
+				$('#par1').prepend('<b>Вставить в начале</b>');
+			});
+			$('#but2').click(function(){
+				$('#par1').append('<b>Вставить в конце</b>');
+			});
+			$('#but3').click(function(){
+				$('.test').append('<div>Вставить в конце блока</div>');
+			});
+
+			// атрибуты
+			$('#but4').click(function(){
+				alert($('#anchor1').attr('href'));
+			});
+			$('#but5').click(function(){
+				$('#anchor1').attr('href','https://google.com').css('color','red'); // <- 
+			});
+			$('#but6').click(function(){
+				$('#anchor1').removeAttr('href');
+			});
+
+			// метод wrap - оборачивает блок
+			$('#but7').click(function() {
+				$('#par4').wrap('<i></i>');
+			});
+			$('#but8').click(function() {
+				$('#par5').wrap('<b></b>');
+			});
+			$('#but9').click(function() {
+				$('#par6').wrap('<pre></pre>');
+			});
+
+			// 
+			
+		});
+
+	</script>
+
+ </body> 
+</html>

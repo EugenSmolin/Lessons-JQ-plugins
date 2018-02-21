@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Курс Попова по JavaScript</title>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+
+    //МАССИВЫ
+
+
+    var students = ["Сергей", "Виктория", "Андрей", "Влад"];
+    students.push("Станислав");
+    students.unshift("Олег");
+    students.pop();
+    students.shift();
+    document.write("Количество элементов: " + students[0]);
+
+
+    /*
+    Домашнее задание к 13-му уроку.
+    1. Создайте массив с фруктами: апельсин, банан, груша.
+    2. Выведите на экран, сколько на данный момент у вас фруктов в  массиве.
+    3. С помощью методов, изученных в предыдущем уроке,  добавьте в конец массива два фрукта - яблоко и ананас, а в  начало массива - грейпфрут.
+    4. Выведите на экран, сколько на данный момент у вас фруктов в  массиве.
+    5. С помощью методов, изученных в предыдущем уроке,  удалите  из массива последний и первый элемент.
+    6. Выведите на экран, сколько на данный момент у вас фруктов в  массиве.
+    */
+    var fruits = ["orange", "banana", "pear"];
+    document.write("Всего фруктов: " + fruits.length + "<br/>");
+    fruits.push("apple", "ananas");
+    fruits.unshift("grapefruit");
+    document.write("Всего фруктов: " + fruits.length + "<br/>");
+    fruits.pop();
+    fruits.shift();
+    document.write("Всего фруктов: " + fruits.length + "<br/>");
+
+
+    //МЕТОД Splice
+
+
+    var students = ["Сергей","Виктория","Андрей","Влад","Станислав","Олег"];
+    students.splice(4,2);
+    students.splice(1,0,"Петр","Василий");
+    students.splice(3,3,"Николай");
+    document.write(students);
+
+    /*
+    Домашнее задание к 14-му уроку.
+
+    У Вас есть массив, про который заранее известно, что в нем точно больше одного элемента.
+    Но сколько именно - неизвестно. Пусть это будет такой массив с фруктами:
+    var fruits = ["яблоко", "апельсин", "груша", "гранат"];
+    Напомню, что по условиям Вы не знаете сколько точно в нем элементов, их может быть и 100  и 200.
+    Ваша задача состоит в том, чтобы с помощью метода splice заменить в массиве
+    предпоследний фрукт на "ананас" и вывести весь массив на экран.
+
+    Когда это будет сделано, проверьте свой код на таком массиве:
+    var fruits = ["банан", "мандарин", "манго"];
+    В этом массиве у Вас мандарин должен будет замениться на ананас.
+    */
+
+    var fruits = ["банан", "мандарин", "манго"];
+    fruits.splice(fruits.length - 2,1,"ананас");
+    document.write(fruits);
+
+
+    //ДОПОЛНИТЕЛЬНЫЕ МАССИВЫ ДЛЯ РАБОТЫ
+    /*
+    реверс - reverse();
+    сортировка -sort();
+    замена разделителя - join();
+    соединение массивов - concat();
+    вырезка из массива - slice();
+    */
+
+    var students = ["Сергей", "Виктория", "Андрей", "Влад", "Стас", "Олег"];
+    var fruits = ["банан", "мандарин", "манго"];
+    var total = students.concat(fruits);
+    var happy = total.slice(5,7);
+    document.write("Эти двое нашли друг-друга: " + happy.join(" + "));
+
+
+    //МНОГОМЕРНЫЕ МАССИВЫ
+
+    var students = ["Сергей", "Влад", "Кацап"];
+    var students2 = ["Виктория", "Евгений"];
+    var students3 = ["Андрей", "Олег", "Стас", "Ольга"];
+
+    var myGroup = [students, students2, students3];
+    document.write("<strong>" + myGroup[1][0] + "</strong><br/>");
+
+    var appleSort = ["Семеренки","Голден"];
+    var orangeSort = ["Апельсин из США","Апельстн из ЗП"];
+    var fruits = [appleSort, "мандарин", "манго", orangeSort];
+
+    document.write("Сорт или фрукт: " + fruits[3][0]);
+
+
+</script>
+</body>
+</html>

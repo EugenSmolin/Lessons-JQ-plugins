@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Lessons jQuery-1</title>
+   <meta charset="utf-8">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ <body>
+	<style>
+		* {
+			font-size: 18px;
+		}
+
+		#block {
+			display: none;
+		}
+		
+		#visib {
+			border: 2px solid #000;
+			background-color: transparent;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 5px 15px;
+			color: green;
+			cursor: pointer;
+		}
+		
+		#hide {
+			border: 2px solid #000;
+			background-color: transparent;
+			font-size: 16px;
+			font-weight: bold;
+			padding:  5px 15px;
+			color: red;
+			cursor: pointer;
+			display: none;
+		}
+	</style>
+
+	<p>Example example example example example</p>
+	<div id="block">
+		<p>Example example example example example</p>
+		<p>Example:</p>
+		<ol type="a">
+			<li>close</li>
+			<li>open</li>
+			<li>close 1</li>
+			<li>open 1</li>
+		</ol>
+		<p>Example example example example example</p>
+	</div>
+	<button id="visib">Click on</button>
+	<button id="hide">Click off</button>
+	
+	<script type="text/javascript">
+		/*var test = $('#block').html();
+		alert(test);*/
+	
+		$(document).ready(function() {
+			$('#visib').click(function() {
+				$('#block').fadeIn(500);
+				$('#visib').css('display', 'none');
+				$('#hide').css('display','block');
+			});
+			$('#hide').click(function() {
+				/*$('#block').css('display', 'block');*/
+				$('#block').fadeOut(500);
+				$('#visib').css('display', 'block');
+				$('#hide').css('display','none');
+			});
+		});
+	</script>
+	
+	
+ </body> 
+</html>

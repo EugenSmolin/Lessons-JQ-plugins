@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slick slider</title>
+	
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="../slick/slick.css">
+	<link rel="stylesheet" href="../slick/slick-theme.css">
+
+	
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			width: 800px;
+			padding: 15px;
+			margin: 0 auto;
+			border: 1px solid #777;
+			background-color: #fff;
+		}
+		h2 {
+			margin-bottom: 5px;
+		}
+		.slick_slider {
+			border: 1px solid #777;
+			margin: 10px 0;
+			height: 100px;
+		}
+		.slick_slider .slide {
+			background-color: #999;
+			/*width: 100%;*/
+			height: 88px;
+			border: 1px solid #777;
+			margin: 5px;
+			padding: 10px;
+		}
+
+	</style>	
+
+	
+	<div class="test">
+		<h2>Slick slider</h2>
+		<div class="slick_slider">
+			<div class="slide">your content 1</div>
+		    <div class="slide">your content 2</div>
+		    <div class="slide">your content 3</div>
+		    <div class="slide">your content 4</div>
+		    <div class="slide">your content 5</div>
+		    <div class="slide">your content 6</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../slick/slick.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+			$('.slick_slider').slick({
+				// infinite: true,
+				// slidesToShow: 3,
+				// slidesToScroll: 1
+
+				dots: true,
+				infinite: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear',
+				autoplay: true,
+  				autoplaySpeed: 3000
+			});
+		});
+
+	</script>
+
+ </body> 
+</html>

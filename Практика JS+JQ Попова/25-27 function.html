@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Курс Попова по JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //ФУНКЦИИ
+    function summa(number1, number2) {
+        var itog = number1 + number2;
+        document.write('Сумма двух чисел = ' + itog);
+    }
+
+    summa(50,60);
+
+    /*
+    Первое домашнее задание к 25-му уроку.
+
+    В качестве домашнего задания вам надо написать функцию, 
+    которая бы вычисляла квадрат переданного ей числа и выводила бы его на экран.
+    */
+
+    function squere(number) {
+        var itog = number * number;
+        //var itog = prompt('Задайте число для вычисления куба:');  //куб числа
+        //var itog = number * number * number;                      //куб числа 
+        document.write('Квадрат чисел = ' + itog);
+    }
+
+    squere(6)
+
+    //ГЛОБАЛЬНЫЕ И ЛОКАЛЬНЫЕ 
+    //ГЛОБАЛЬНАЯ
+    var num = 45;
+
+    function myFun() {
+        document.write(num);
+    }
+
+    myFun();
+
+    //ЛОКАЛЬНАЯ
+    function myFunc() {
+        var num = 96;
+        document.write(num);
+    }
+
+    myFunc();
+
+    //Свойство RETURN
+    function squere(number) {
+        var itog = number * number;
+        return itog;
+    }
+
+    alert('Квадрат числа ' + squere(20));
+
+    /*
+    Домашнее задание к 27-му уроку.
+
+    Создать функцию fio(), которая поочередно запрашивает у пользователя имя, фамилию и отчество, 
+    а в  качестве результата своей работы возвращает ФИО одной строкой с пробелами между словами.
+    */
+    function fio() {
+        var fam = prompt('Ваше фамилия:');
+        var name = prompt('Ваше имя:');
+        var otch = prompt('Ваше отчество:');
+        var itog = fam + ' ' + name + ' ' + otch;
+        return itog;
+    }
+
+    document.write(fio());
+
+</script>
+</body>
+</html>

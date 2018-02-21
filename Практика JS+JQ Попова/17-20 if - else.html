@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Курс Попова по JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    //КОНСТРУКЦИЯ if else
+    /*
+    var weather = "пасмурно";
+
+    if (weather == "Ясно") {
+        document.write("Класс! Мы идем жарить шашлык и пить пиво.")
+    }
+    else {
+        document.write("Ну, значит, будем жарить дома.")
+    }
+
+    var number = 4;
+
+    if (number >= 20) {
+        document.write("Число больше 20")
+    }
+    else {
+        document.write("Число меньше 20, эх...")
+    }
+
+
+    Домашнее задание к 17-му уроку.
+
+    Возьмите массив студентов из 15-го урока:
+    var students = ["Абаканов Сергей", "Гагарин Матвей", "Хантухова Лейла", "Алалина Алина",  "Сакуров Иоган"];
+
+    Напишите условие, которое проверяет, если количество элементов в массиве больше или  равно 3,
+    то выводится сообщение о том, что это большой массив, в котором как минимум 3  элемента.
+    А иначе, выведите на экран сообщение о том, что это маленький массив, в  котором менее 3-х элементов.
+
+    var students = ["Сергей", "Виктория", "Андрей", "Влад", "Стас", "Олег"];
+
+    if (students.length >= 3) {
+        document.write("В группе больше 3 человек")
+    }
+    else {
+        document.write("В группе меньше 3 человек")
+    }
+
+    var weather = "ясно";
+    var car = "есть";
+
+    if (weather == "ясно" && car == "есть") {
+        document.write("Класс! Мы идем жарить шашлык и пить пиво.")
+    }
+    else {
+        document.write("Ну, значит, будем жарить дома.")
+    }
+
+     Домашнее задание к 18-му уроку.
+
+     У Вас есть массив:  var students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
+     Вам нужно написать условие, что, если длина этого массива равна 4 и последним элементом
+     является "Виктор", то вывсти на экран сообщение "Этот массив мне подходит",
+     а иначе вывести на экран, что массив вам не подходит.
+     */
+    var students = ["Сергей", "Виктория", "Андрей", "Влад", "Стас", "Олег"];
+
+    if (students.length == 6 && students[students.length - 1] == "Олег") {
+        document.write("Этот массив мне подходит")
+    }
+    else {
+        document.write("Этот массив мне НЕ подходит")
+    }
+
+
+</script>
+</body>
+</html>

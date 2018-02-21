@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery-5</title>
+	
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.test {
+			padding: 15px;
+			border: 1px solid #777;
+			background-color: #fff;
+			display: inline-block;
+		}
+		input {
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+		#array {
+			margin-bottom: 15px;
+			padding: 5px;
+			border: 1px solid green;
+		}
+		#result {
+			margin-bottom: 15px;
+			font-weight: bold;
+		}
+		button {
+			padding: 3px 15px;
+		}
+	</style>
+	
+	<div class="test">
+		<input id="input_text" type="text" placeholder="Введите текст">
+		<div id="array">Текст в котором можно изменить стиль слова</div>
+		<div id="result">Text</div>
+		<button onclick="start()">start</button>
+	</div>
+
+	<script>
+		var myArray = [2,4,6,8,10];//стандартный массив для примера
+		$('#result').text(myArray);
+
+		function start() {
+			//var myArray = $('#array').text();
+			var inputText = $('#input_text').val();
+
+			//alert(myArray);
+
+			for (var i = 0; i < myArray.length; i++) {
+				if(myArray[i] == inputText) {
+					var test = myArray[i];
+					alert(test);
+					//$('#result').text(test).css('color','red');
+				}
+			}
+		}
+
+		// var test = function(a,b) {
+		// 	result = a * b;
+		// 	return result;
+		// };
+
+		// document.write(test(5,6));
+
+	</script>
+
+ </body> 
+</html>

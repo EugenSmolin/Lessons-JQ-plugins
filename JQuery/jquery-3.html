@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lessons jQuery-3</title>
+	<meta charset="utf-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+		}
+		#form {
+			margin: 20px;
+		}
+		.message {
+			color: red;
+			font-weight: bold;
+		}
+		.button {
+			margin-top: 20px;
+			padding: 0 10px;
+			display: inline-block;
+		}
+
+	</style>
+	
+	<form id="form">
+		<label for="male">Man</label>
+		<input id="male" type="radio" name="pol">
+		<label for="female">Woman</label>
+		<input id="female" type="radio" name="pol">
+		<div class="message"></div><!-- поле для сообщения -->
+		<button type="button" class="button" onclick="valid()">button</button>
+		<button type="reset" class="button">reset</button>
+	</form>
+
+	<script type="text/javascript">
+		function valid() {
+			var state = $('input[name="pol"]:checked').val();
+			if(!state) {	// !state - 
+				$('.message').html('Выбирите пол');
+			}
+			else {
+				$('.message').hide(400);
+				alert('Спасибо!');
+			}
+		};
+	</script>
+	
+ </body> 
+</html>
