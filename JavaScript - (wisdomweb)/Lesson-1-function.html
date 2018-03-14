@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-1 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div class="test"></div>
+
+
+	<script>
+		// lesson-1 => function
+		/*var a = 20;
+		var b = 30;
+		function test(a,b) {
+			z = a + b + 10;
+			document.write(z)
+		}
+		test(a,b);*/
+
+		//
+		/*var a = 10;
+		var b = 10;
+		function test(a,b) {
+			z = a + b;
+			return z;
+		}
+		alert(test(a,b));*/
+
+		//
+		/* Зададим функцию которая будет принимать в качестве первого параметра массив,
+		а в качестве второго определенную пользователем анонимную функцию, которая 
+		будет каким-либо образом изменять переданный массив */
+		function arrMap(arr,func) {
+		    var res = new Array;
+		    for (var i = 0; i < arr.length; i++)
+		       res[i] = func(arr[i]);
+		    return res;
+		}
+		// Зададим массив значения которого будет изменяться с помощью анонимной функции  
+		var arr = new Array(3,5,1,4);
+		/* Передадим функции массив arr и анонимную функцию которая будет увеличивать 
+		каждое значение исходного массива на 1 */ 
+		document.write(arrMap(arr,function(g){return g + 1;}) + '<br />');
+
+
+	</script>
+	
+</body>
+</html>
