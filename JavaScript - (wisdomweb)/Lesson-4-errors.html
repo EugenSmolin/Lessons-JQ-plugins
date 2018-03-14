@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-4 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div class="test">
+		<div id="mes"></div>
+		<div id="mes1"></div>
+	</div>
+
+
+	<script type="text/javascript">
+		// lesson-4 => Errors - try{} catch{}
+		// ошибки
+		try {
+			document.write('Первое сообщение'+'<br />');
+			document.write('Второе сообщение');
+			document.getElementById('mes').innerHTML='Третье сообщение';
+			document.getElementById('mes1').innerHTML='Четвертое сообщение';
+		}
+		catch(er) {
+			alert(er);
+		}
+
+
+
+	</script>
+	
+</body>
+</html>
