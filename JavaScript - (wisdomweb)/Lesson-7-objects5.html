@@ -54,10 +54,39 @@
 		var res = new Person();
 		res.result();
 
+		document.write('<hr/>');
+		// ==================== 
+		//Создадим конструктор Human
+		var Human = function(name,age,job) {
+			this.name = name;
+			this.age = age;
+			this.job = job;
+			this.humanInfo = function() {
+				document.write('My name is ' + this.name + '<br/>');
+				document.write('I am ' + this.age + '<br/>');
+				document.write('My job is ' + this.job + '<br/>');
+			};
+		};
 
-		
+		var Project = function(project,company,name,age,job) {
+			this.base = Human;
+			this.base(name,age,job);
+			// добавление новых свойств
+			this.project = project;
+			this.company = company;
+			this.projectInfo = function() {
+				human.humanInfo();
+				document.write('My project is ' + this.project + '<br/>');
+				document.write('I am works in company: ' + this.company + '<br/>');
+			};
+		};
 
-		
+		var human = new Human('Eugen',28,'FrontEnd Developer');
+		var job = new Project('Rock','Roll n Code');
+
+		//human.humanInfo();
+		job.projectInfo();
+
 
 
 	</script>
