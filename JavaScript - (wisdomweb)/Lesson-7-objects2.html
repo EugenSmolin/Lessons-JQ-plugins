@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-7 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div name="test"></div>
+
+
+	<script type="text/javascript">
+		// lesson-7.2 создание объектов =>
+		var Fio = function(surname,name,age) {
+			this.surname = surname;
+			this.name = name;
+			this.age = age;
+			this.info = function() {
+				document.write('Surname: ' + this.surname + '<br/>');
+				document.write('Name: ' + this.name + '<br/>');
+				document.write('Age: ' + this.age);
+			}
+		};
+		var carlos = new Fio('Carlos','Oliveira',59);
+		var marco = new Fio('Heitala','Marco',39);
+
+		carlos.info();
+		document.write('<hr/>');
+		marco.info();
+		document.write('<hr/>');
+
+		// =================
+		var MyApp = {
+			Fio: function(surname,name,age) {
+				this.surname = surname;
+				this.name = name;
+				this.age = age;
+				this.info = function() {
+					document.write('Surname: ' + this.surname + '<br/>');
+					document.write('Name: ' + this.name + '<br/>');
+					document.write('Age: ' + this.age);
+				}
+			},
+			FioInfo: function(job) {
+				this.job = job;
+				this.jobInfo = function() {
+					document.write('<br/>' + 'Ваша должность: ' + this.job);
+				}
+			}
+		};
+		var petro = new MyApp.Fio('Petrov','Petro',25);
+		var job = new MyApp.FioInfo('IOS developer');
+		petro.info();
+		job.jobInfo();
+
+		console.log(petro.constructor);
+		console.log(job.constructor);
+		console.log(marco.constructor);
+		console.log(carlos.constructor);
+
+		
+
+
+	</script>
+	
+</body>
+</html>

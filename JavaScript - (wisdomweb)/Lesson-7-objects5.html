@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-7 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div name="test"></div>
+
+
+	<script type="text/javascript">
+		// lesson-7.5 создание объектов =>
+		// ===== объекты => прототипное наследование 'sorax'
+		var Person = {
+			constructor: function(name,age,gender) {
+				this.name = name;
+				this.age = age;
+				this.gender = gender;
+				return this;
+			},
+			greet: function() {
+				console.log('Hi, my name is ' + this.name);
+				console.log(this.age);
+				console.log(this.gender);
+			}
+		};
+
+		var firstPerson = Object.create(Person).constructor('John',25,'male');
+		var secondPerson = Object.create(Person).constructor('Marco',60,'male');
+		var thirdPerson = Object.create(Person).constructor('Jessica',60,'female');
+
+		firstPerson.greet();
+		secondPerson.greet();
+		thirdPerson.greet();
+
+		// ===================
+		var Person = function() {
+			this.name = 'Tomas',
+			this.age = 25,
+			this.result = function() {
+				console.log('Name: ' + this.name + ', Age: ' + this.age);
+			}
+		};
+		var res = new Person();
+		res.result();
+
+
+		
+
+		
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-7 </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div name="test"></div>
+
+
+	<script type="text/javascript">
+		// lesson-7.6 создание объектов =>
+		// ===== объекты => конструкторы и классы 'sorax'
+		var Person = function(name) {
+			this.name = name;
+		};
+
+		Person.prototype.greet = function() {
+			console.log("Hello, my name's " + this.name);
+		}
+
+		var eugen = new Person('Eugen');
+		var grey = new Person('Grey'); 
+
+		console.log(eugen.name);
+		eugen.greet();
+		console.log(grey.name);
+		grey.greet();
+		
+
+
+	</script>
+	
+</body>
+</html>

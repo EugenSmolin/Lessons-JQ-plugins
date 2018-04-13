@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-6 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div name="test">
+		<p>Извлеките часть строки ниже выделенную жирным шрифтом сначала с помощью метода <b>substr()</b> затем с помощью <b>substring()</b> и выведите ее на страницу: </p>
+		<p>В тайге и горах можно увидеть <b>марала, лося, белку</b>, бурундука, зайца. </p>
+	</div>
+
+
+	<script type="text/javascript">
+		// lesson-6 объект string =>
+		// 1.Раскодируйте значение строки и выведите ее на страницу:
+		// <hr />
+		// (1052)(1086)(1089)(1082)(1074)(1072)
+		// <hr />
+		// 2.После того как строка будет раскодирована закодируйте ее обратно и сравните свой результат с данными задачи.
+		// <b>Подсказка:</b> используйте методы <b>fromCharCode()</b> и <b>charCodeAt()</b>
+
+		//Пишите Ваш код здесь
+		var myArr = [1052,1086,1089,1082,1074,1072];
+		for(var i = 0; i < myArr.length; i++) {
+		    document.write(String.fromCharCode(myArr[i]));
+		}
+		document.write('<br/>');
+		var myStr = 'Строка';
+		for(var i = 0; i < myStr.length; i++) {
+		    document.write(myStr[i].charCodeAt() + '<br/>');
+		}
+
+
+	</script>
+	
+</body>
+</html>

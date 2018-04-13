@@ -15,14 +15,16 @@
 		}
 	</style>
 
-	<div class="test">
-		<div id="mes"></div>
-		<div id="mes1"></div>
-	</div>
+	<form name="myForm">
+		<div>rock<input type="radio"></div>
+		<div>blus<input type="radio"></div>
+		<div>classic<input type="radio"></div>
+	</form>
 
 
 	<script type="text/javascript">
 		// lesson-5 => 
+		
 		var str = 'Строка';
 		var num = 45;
 		var fun = function(){};
@@ -33,6 +35,43 @@
 		document.write(typeof(fun) + '<br/>');
 		document.write(typeof(arr) + '<br/>');
 		document.write(typeof(bool) + '<br/>');
+
+		document.write('<hr />');
+
+		var myFun = function (a, b) {
+			if (a == b) {
+				document.write('Числа равны!');
+			} else {
+				document.write('Числа не равны...');
+			}
+		}
+
+		myFun(10, 10);
+
+		document.write('<hr />');
+
+		// === МАССИВЫ === //
+		// 1. Удалите из массива <i>country</i> страны и сохраните результат в массив continent (используйте метод <b>splice()</b>).
+		// 2. Удалите из массива <i>animal</i> животных не являющихся птицами и сохраните результат в массив <i>bird</i> (используйте метод <b>splice()</b>).
+		// 3. Соедините полученные массивы в массив contibird и выведите результат на экран (используйте метод <b>concat()</b>).
+		// 4. Добавьте в начало полученного массива элемент 'Северная Америка', а в конец массива элемент 'Попугай' и выведите результат на экран (используйте методы <b>push()</b> и <b>unshift()</b>).
+		// 5. Отсортируйте массив contibird и выведите результат на экран (используйте метод <b>sort()</b>).
+		/*
+		var country=['Пакистан', 'Германия', 'Италия', 'Россия', 'Австралия', 'Южная Америка', 'Евразия', 'Африка','Антарктида'];
+		var animal=['Лев', 'Тигр', 'Орел', 'Воробей', 'Снегирь', 'Голубь', 'Рысь', 'Медведь'];
+		//Пишите код здесь
+		var continent = country.splice(4);
+		var bird = animal.splice(2,4);
+		var contibird = continent.concat(bird);
+		document.write(contibird + '<br/>');
+		contibird.unshift('Северная Америка')
+		contibird.push('Попугай');
+		document.write(contibird + '<br/>');
+		contibird.sort();
+		for(var i = 0; i < contibird.length; i++) {
+			document.write(i + ' элемент - ' + contibird[i] + '<br/>');
+		}
+		*/
 
 
 

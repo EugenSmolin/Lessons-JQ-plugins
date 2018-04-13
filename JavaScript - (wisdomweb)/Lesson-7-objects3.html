@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> Lesson-7 wisd </title>
+
+</head>
+<body>
+	<style>
+		body {
+			padding: 15px;
+			font-size: 18px;
+		}
+	</style>
+
+	<div name="test"></div>
+
+
+	<script type="text/javascript">
+		// lesson-7.3 создание объектов =>
+		// ===== объекты => прототипное наследование
+		var obj = {
+			name: 'Василий'
+		};
+
+		var newObj = {
+			name: 'Карлос',
+			surname: 'Оливейра',
+			test: function() {
+				console.log('тест');
+			}
+		};
+
+		var Foo = function() {
+			this.name = 'Николай';
+		};
+
+		var result = new Foo();
+		Foo.prototype = newObj;
+		var result2 = new Foo();
+
+		//console.log(result2);
+		//console.log(result);
+		//console.log(result.__proto__ === Foo.prototype)
+
+		// ======================
+		var animal = {
+			canRun: true
+		};
+
+		var Wolf = function() {
+			this.name = 'Волк'
+		};
+
+		var Grey = function() {
+			this.color = 'Серый'
+		};
+
+		var Black = function() {
+			this.color = 'Черный'
+		};
+
+		var Chicken = function() {
+			this.name = 'Курица',
+			this.haveWings = true
+		};
+
+		Wolf.prototype = animal;
+		Chicken.prototype = animal;
+		Chicken.prototype.Kukareku = function() {
+			console.log('Кукареку!');
+		}
+
+		var wolfy = new Wolf();
+		var chicky = new Chicken();
+
+		Grey.prototype = wolfy;
+		Black.prototype = wolfy;
+		Grey.prototype = chicky;
+
+		var wolfyGrey = new Grey();
+		var wolfyBlack = new Black();
+		var chickenGrey = new Grey();
+
+		console.log(wolfy);
+		console.log(wolfyGrey);
+		console.log(wolfyBlack);
+		console.log(chicky);
+		console.log(chickenGrey);
+
+		
+
+
+	</script>
+	
+</body>
+</html>
