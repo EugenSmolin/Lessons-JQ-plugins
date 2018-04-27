@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>slick slider</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: rgb(200,200,200);
+			margin: 0;
+			padding: 15px;
+			font-family: 'Tahoma', sans-serif;
+		}
+		.jq-slider {
+			width: 800px;
+			padding: 15px;
+			margin: 0 auto;
+			border: 1px solid #777;
+			background-color: #fff;
+			text-align: center;
+		}
+		h2 {
+			margin-bottom: 15px;
+		}
+		.photos {
+			position: relative;
+			height: 300px;
+		}
+		.photos img {
+			position: absolute;
+			left: calc(50% - 200px);
+			opacity: 0;
+			margin: 0 auto;
+			transition: opacity 1s;
+		}
+		.photos img:first-child {
+			opacity: 1;
+		}
+		.btn-nav {
+			margin: 15px 0;
+		}
+		button {
+			padding: 3px 20px;
+			margin: 10px;
+			cursor: pointer;
+		}
+
+	</style>	
+
+	
+	<div class="jq-slider">
+		<h2>Jquery slider</h2>
+		<div class="photos">
+			<img src="images/slide-1.jpeg" alt="">
+			<img src="images/slide-2.jpg" alt="">
+			<img src="images/slide-3.jpg" alt="">
+			<img src="images/slide-4.jpg" alt="">
+			<img src="images/slide-5.jpg" alt="">
+		</div>
+		<div class="btn-nav">
+			<button id="prev">prev</button>
+			<button id="next">next</button>
+		</div>
+	</div>
+
+	<script>
+		
+		$(document).ready(function() {
+			var prev = $('.jq-slider .btn-nav #prev');
+			var next = $('.jq-slider .btn-nav #next');
+			var img = $('.jq-slider .photos').find('img');
+			var i = 0;
+
+			$('#prev').click(function() {
+				$(img[i]).css('opacity', 0);
+				i = i - 1;
+				if(i < 0) {
+					i = img.length - 1;
+				}
+				$(img[i]).css('opacity', 1);
+			});
+
+			$('#next').click(function() {
+				$(img[i]).css('opacity', 0);
+				i = i + 1;
+				if(i >= img.length) {
+					i = 0;
+				}
+				$(img[i]).css('opacity', 1);
+			});
+		});
+
+	</script>
+
+ </body> 
+</html>
