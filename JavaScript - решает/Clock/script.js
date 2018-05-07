@@ -8,7 +8,7 @@ window.onload = function() {
 		document.getElementById('sec').style.transform = 'rotate(' + sec + 'deg)';
 		document.getElementById('min').style.transform = 'rotate(' + min + 'deg)';
 		sec += 6;
-		if (sec+6 == 366) {
+		if ((sec + 6) == 366) {
 			sec = 0;
 			min += 6;
 		}
