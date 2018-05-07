@@ -1,0 +1,23 @@
+h2 {
+	text-align: center;
+	margin-top: 30px;
+	color: #777;
+}
+
+#game {
+	width: 300px;
+	height: 300px;
+	background-color: #999;
+	margin: 0 auto;
+}
+
+.block {
+	width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    float: left;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}

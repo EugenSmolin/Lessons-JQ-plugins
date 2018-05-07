@@ -1,0 +1,9 @@
+#canvas {
+	width: 400px;
+	height: 200px;
+	border: 2px solid #000;
+	margin: 40px;
+	background: url('./setka.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
