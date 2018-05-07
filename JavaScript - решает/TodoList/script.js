@@ -9,14 +9,11 @@ window.onload = function() {
 
 	document.getElementById('btn-add').onclick = function() {
 		var textNote = document.getElementById('text_note').value;
-		// {todo: Добавить текст, check: false}
 		var temp = {
 			todo: textNote
 		};
-		//temp.check = false;
 		var arrLength = todoList.length;
 		todoList[arrLength] = temp;
-		//console.log(todoList);
 		out();
 		localStorage.setItem('todo', JSON.stringify(todoList));
 

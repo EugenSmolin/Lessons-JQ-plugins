@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+	color: #777;
+}
+#block {
+	width: 800px;
+	height: 800px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+}
+#clock {
+	position: relative;	
+	width: 700px;
+	height: 700px;
+	margin: 0 auto;
+	border: 2px solid #000;
+	border-radius: 50%;
+	background: url('./clock.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#min, #sec {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 150px);
+}
