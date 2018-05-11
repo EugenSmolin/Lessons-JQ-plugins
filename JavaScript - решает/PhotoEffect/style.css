@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+	color: #999;
+}
+#block {
+	width: 800px;
+	height: 800px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 20px;
+}
+#myslide {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	border: 2px solid #000;
+	overflow: hidden;
+}
+#one, #two {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+#one {
+	background-color: blue;
+}
+#two {
+	background-color: green;
+}

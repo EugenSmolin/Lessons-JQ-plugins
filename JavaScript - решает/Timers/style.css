@@ -13,14 +13,19 @@ h1 {
 	margin: 0 auto;
 	padding: 15px;
 	font-size: 20px;
+	position: relative;
 }
-#rect {
-	width: 200px;
-	height: 200px;
+#timer {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
 	background-color: orange;
 }
-#out {
-	width: 250px;
-	height: 100px;
-	font-size: 14px;
+#stop {
+	margin-top: 200px;
+	padding: 3px 20px;
+	font-weight: bold;
 }
