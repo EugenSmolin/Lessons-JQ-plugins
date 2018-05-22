@@ -1,0 +1,43 @@
+/*select*/
+.window {
+    display: inline-block;
+    width: 65px;
+    height: 100px;
+    background-color: #ccc;
+}
+select {
+    width: 65px;
+}
+option {
+    text-align: center;
+}
+.slots {
+    padding: 20px;
+    background-color: #AAAACC;
+    border: 2px solid #8888AA;
+    width:240px;
+}
+.message {
+    padding:20px;
+    width:240px;
+    background-color: #AAAACC;
+    border: 2px solid #8888AA;
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+}
+.arm {
+    width: 45px;
+    height: 100px;
+    color: #003399;
+    background-color: #9999BB;
+    border: 2px solid #777799;
+    cursor: pointer;
+}
+div {
+    margin: 15px 0;
+}
+img {
+    width: 83px;
+    height: 101px;
+}

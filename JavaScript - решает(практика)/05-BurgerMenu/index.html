@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Burger Menu </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<h1>Burger Menu</h1>
+	<div id="block">
+		<h2>Меню:</h2>
+		<div><input type="checkbox" data-cost="10" data-kkal="75" class="menu" checked disabled>Булочка</div>
+		<hr>
+		<h3>Наполнение</h3>
+		<div><input type="checkbox" data-cost="20" data-kkal="200" class="menu" checked> Котлета</div>
+		<div><input type="checkbox" data-cost="12" data-kkal="100" class="menu"> Сыр</div>
+		<div><input type="checkbox" data-cost="8" data-kkal="75" class="menu"> Салат</div>
+		<div><input type="checkbox" data-cost="2" data-kkal="50" class="menu"> Огурец</div>
+		<div><input type="checkbox" data-cost="4" data-kkal="20" class="menu"> Помидор</div>
+		<hr>
+		<h3>Соусы</h3>
+		<div><input type="checkbox" data-cost="5" data-kkal="13" class="menu" checked> Кетчуп</div>
+		<div><input type="checkbox" data-cost="5" data-kkal="48" class="menu"> Горчица</div>
+		<div><input type="checkbox" data-cost="5" data-kkal="66" class="menu"> Майонез</div>
+		<div><input type="checkbox" data-cost="10" data-kkal="103" class="menu"> Сычуанский соус</div>
+		<hr>
+		<h3>Итого:</h3>
+		<div>Калорийность: <span id="kkal"></span> ккал.</div>
+		<div>Цена: <span id="cost"></span> грн.</div>
+		<button id="result">Счёт</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

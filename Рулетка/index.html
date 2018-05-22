@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рулетка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onLoad="MakeEm();">
+    <div>
+        <span class="message" id="message">Tarwn's Slot Machine</span><br>
+        <span id="slot_machine" class="slots"></span> <!-- Главный блок -->
+        <input type="button" onClick="ChargeEm();" value="Spin" class="arm" id="slot_arm">
+    </div>
+    
+    <div>
+        <form name="frmChoice">
+            Tokens: <input type="text" name="txtTokens" value="0" readonly>
+        </form>
+    </div>
+    
+    <div>
+        <table style="font:verdana;border: 1px solid #aaaacc;"><tr><th>Payoffs</th></tr>
+            <tr><td>1 cherry</td><td>1 tokens</td></tr>
+            <tr><td>2 cherry</td><td>5 tokens</td></tr>
+            <tr><td>2 fruit + 1 cherry </td><td>25 tokens</td></tr>
+            <tr><td>3 fruit </td><td>25 tokens</td></tr>
+            <tr><td>3 cherry</td><td>25 tokens</td></tr>
+            <tr><td>2 7's   </td><td>35 tokens</td></tr>
+            <tr><td>2 777's </td><td>35 tokens</td></tr>
+            <tr><td>2 7's, 1 777</td><td>40 tokens</td></tr>
+            <tr><td>1 7, 2 777's</td><td>50 tokens</td></tr>
+            <tr><td>3 7's  </td><td>125 tokens</td></tr>
+            <tr><td>3 777's</td><td>250 tokens</td></tr>
+            <tr><td>3 bars</td><td>500 tokens</td></tr>
+        </table>
+    </div>
+
+    <div id="img">
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script defer>
+        var imgBlock = document.getElementById('img');
+        var arr = ['hearts.png','clubs.png','diamonds.png','spades.png'];
+        for (var i = 0; i < arr.length; i++) {
+            imgBlock.innerHTML += '<img src="' + arr[i] + '">';
+            console.log(arr[i]);
+        }
+
+        
+        //var img = new Image(166,202);
+        //img.src = arr[i];
+        //imgBlock.appendChild(img);
+    </script>
+</body>
+</html>

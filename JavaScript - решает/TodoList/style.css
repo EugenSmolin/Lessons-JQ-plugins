@@ -29,6 +29,7 @@ h1 {
 	cursor: pointer;
 }
 #note_block {
+	position: relative;
 	display: block;
 	float: left;
 	width: 200px;
