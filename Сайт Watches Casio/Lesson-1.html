@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title> JSON </title>
+
+	
+
+</head>
+<body>
+	<style>
+		.click {
+			padding: 15px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		.watch-block {
+			position: relative;
+			top: 0;
+			display: inline-block;
+			width: 200px;
+			min-height: 100px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			transition: all .2s linear;
+		}
+		.watch-block:hover {
+			top: -5px;
+			box-shadow: 0 5px 10px #999;
+			cursor: pointer;
+		}
+	</style>
+
+	<div class="click"></div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		// lesson-1 => 
+		var arrWatch = [
+			{
+				name: 'Timex',
+				cost: 2530,
+				color: 'blue',
+				href: ''
+			},
+			{
+				name: 'Casio G-Shock 8000',
+				cost: 4500,
+				color: 'red',
+				href: ''
+			},
+			{
+				name: 'Casio G-Shock 1000',
+				cost: 2566,
+				color: 'green',
+				href: ''
+			},
+			{
+				name: 'Casio G-Shock',
+				cost: 2532,
+				color: 'black',
+				href: ''
+			}
+		];	
+
+		console.log(arrWatch);
+
+		for (var i = 0; i < arrWatch.length; i++) {
+			var block = 
+				'<div class="watch-block">' +
+					'<div>Имя: ' + arrWatch[i].name + '</div>' + 
+					'<div>Цена: ' + arrWatch[i].cost + ' грн.</div>' + 
+					'<div>Цвет: ' + arrWatch[i].color + '</div>' + 
+				'</div>';
+
+			$('.click').append(block);
+		}
+
+		/*$.getJSON('watch.json', function(data) {
+			console.log(data);
+		});*/
+
+
+	</script>
+	
+</body>
+</html>

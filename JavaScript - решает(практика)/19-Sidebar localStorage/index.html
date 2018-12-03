@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar LocalStorage</title>
+</head>
+<body>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #999;
+    background: rgba(0,0,0,.3);
+    padding: 10px;
+    transition: all .3s linear;
+  }
+  .open {
+    /*display: inline-block;*/
+    margin-left: 0;
+  }
+  .close {
+    /*display: none;*/
+    margin-left: -220px;
+  }
+  button {
+    cursor: pointer;
+  }
+</style>
+
+<div class="sidebar">
+  <h5>Header sidebar</h5>
+  <p>paragraph</p>
+  <p>paragraph paragraph paragraph</p>
+</div>
+
+<button id="sidebar">=</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>
