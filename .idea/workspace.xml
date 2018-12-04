@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b266500-666b-4b54-8375-4b919d114300" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Lesson-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/сайт.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (wisdomweb)/Lesson-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (wisdomweb)/Lesson-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,36 +20,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html">
+        <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="152">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js">
+        <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="57">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preloader.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery/preloader.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1140" />
           </provider>
         </entry>
       </file>
@@ -76,9 +57,11 @@
         <option value="$PROJECT_DIR$/JavaScript - решает(практика)/18-Chess/script.js" />
         <option value="$PROJECT_DIR$/JavaScript - решает(практика)/18-Chess/index.html" />
         <option value="$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/index.html" />
-        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html" />
         <option value="$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/main.js" />
+        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html" />
+        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html" />
         <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js" />
+        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js" />
       </list>
     </option>
   </component>
@@ -121,18 +104,7 @@
               <item name="уроки JavaScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="уроки JavaScript" type="462c0819:PsiDirectoryNode" />
               <item name="JavaScript - (learn.javascript)" type="462c0819:PsiDirectoryNode" />
-              <item name="Основы" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="уроки JavaScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="уроки JavaScript" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript - решает(практика)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="уроки JavaScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="уроки JavaScript" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript - решает(практика)" type="462c0819:PsiDirectoryNode" />
-              <item name="19-Sidebar localStorage" type="462c0819:PsiDirectoryNode" />
+              <item name="Качества кода" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -147,7 +119,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -177,17 +149,18 @@
       <option name="presentableId" value="Default" />
       <updated>1527235838722</updated>
       <workItem from="1527235842889" duration="1846000" />
-      <workItem from="1543828411491" duration="17521000" />
+      <workItem from="1543828411491" duration="38030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19367000" />
+    <option name="totallyTimeSpent" value="39876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1933657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1933657" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -196,7 +169,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32896304" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896304" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -261,22 +234,10 @@
     <entry file="file://$PROJECT_DIR$/JavaScript - решает(практика)/04-ProgressBar/script.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery/preloader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - решает(практика)/19-Sidebar localStorage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -287,10 +248,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/preloader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Игры JS/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1940">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="658">
+          <caret line="234" column="2" selection-start-line="234" selection-start-column="2" selection-end-line="234" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
