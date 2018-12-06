@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b266500-666b-4b54-8375-4b919d114300" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/02-Качества кода/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Поиск русских букв/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Поиск русских букв/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Поиск русских букв/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/02-Качества кода/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/01-Основы/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/01-Основы/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Поиск русских букв/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Поиск русских букв/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -36,8 +30,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+            <state relative-caret-position="453">
+              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -75,10 +69,10 @@
         <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/index.html" />
         <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Основы/main.js" />
         <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/Качества кода/main.js" />
-        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" />
         <option value="$PROJECT_DIR$/Поиск русских букв/index.html" />
-        <option value="$PROJECT_DIR$/Поиск русских букв/main.js" />
         <option value="$PROJECT_DIR$/Поиск русских букв/main.css" />
+        <option value="$PROJECT_DIR$/Поиск русских букв/main.js" />
+        <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" />
         <option value="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" />
       </list>
     </option>
@@ -124,6 +118,11 @@
               <item name="JavaScript - (learn.javascript)" type="462c0819:PsiDirectoryNode" />
               <item name="03-Структуры данных" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="уроки JavaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="уроки JavaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="Поиск русских букв" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,12 +167,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527235838722</updated>
       <workItem from="1527235842889" duration="1846000" />
-      <workItem from="1543828411491" duration="77302000" />
+      <workItem from="1543828411491" duration="83443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79148000" />
+    <option name="totallyTimeSpent" value="85289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -384,13 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Поиск русских букв/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Поиск русских букв/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -398,17 +390,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Поиск русских букв/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+        <state relative-caret-position="453">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
         </state>
       </provider>
     </entry>

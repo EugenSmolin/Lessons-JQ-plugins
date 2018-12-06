@@ -3,7 +3,7 @@ var checkedWord = 1;
 function changeRadio(_this) {
   var thisVal = +_this.value;
   if (thisVal === 1) {
-    checkedWord = 1
+    checkedWord = 1;
     document.getElementById('btn-change-letter').style.display = 'block';
   } else {
     checkedWord = 2;
@@ -64,7 +64,7 @@ document.getElementById('btn-search-words').onclick = function () {
 
 };
 
-document.getElementById('btn-change-letter').onclick = function() {
+document.getElementById('btn-change-letter').onclick = function () {
 
   // let mainText = document.getElementById('main-text').value;
   let mainText = document.querySelector('.result').innerText;

@@ -65,8 +65,42 @@ window.onload = function () {
   /*var str = 'stringify';
   console.log(str.substring(2));*/
 
-  
+  /*var str = 'stringify';
+  console.log(str.substr(2, 4));*/
 
+  /*var str = 'testme';
+  console.log(str.slice(0,-2));
+
+  console.log('а'.charCodeAt(0));
+  console.log('я'.charCodeAt(0));
+  console.log('А'.charCodeAt(0));
+  console.log('Я'.charCodeAt(0));*/
+
+  // 1 задача
+  function ucFirst(_str) {
+    if (!_str) return _str;
+    return _str[0].toUpperCase() + _str.slice(1);
+  }
+
+  console.log(ucFirst('вася'));
+  console.log(ucFirst('jackie'));
+
+  // 2 задача
+  function checkSpam(_str) {
+    var viagra = 'viagra';
+    var xxx = 'xxx';
+
+    _str = _str.toLowerCase();
+
+    if (_str.indexOf(viagra) >= 0 || _str.indexOf(xxx) >= 0) {
+      return true;
+    }
+    return false;
+  }
+
+  console.log(checkSpam('buy ViAgRA now'));
+  console.log(checkSpam('free xxxxx'));
+  console.log(checkSpam("innocent rabbit"));
 
 };
 
