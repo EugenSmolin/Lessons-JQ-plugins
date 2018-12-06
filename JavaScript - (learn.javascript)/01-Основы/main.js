@@ -1,4 +1,4 @@
-// === Основы JS === //
+// === 01-Основы JS === //
 window.onload = function () {
 
   // console.log(String(null)); // преобразование в строку
