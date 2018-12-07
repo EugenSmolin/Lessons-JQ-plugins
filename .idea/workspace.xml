@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b266500-666b-4b54-8375-4b919d114300" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="532">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="210" column="2" lean-forward="true" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
+            <state relative-caret-position="620">
+              <caret line="240" column="2" selection-start-line="240" selection-start-column="2" selection-end-line="240" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -167,12 +167,12 @@
       <updated>1527235838722</updated>
       <workItem from="1527235842889" duration="1846000" />
       <workItem from="1543828411491" duration="89574000" />
-      <workItem from="1544185535731" duration="3770000" />
+      <workItem from="1544185535731" duration="8838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95190000" />
+    <option name="totallyTimeSpent" value="100258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -409,15 +409,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="532">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="210" column="2" lean-forward="true" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
+        <state relative-caret-position="620">
+          <caret line="240" column="2" selection-start-line="240" selection-start-column="2" selection-end-line="240" selection-end-column="2" />
         </state>
       </provider>
     </entry>

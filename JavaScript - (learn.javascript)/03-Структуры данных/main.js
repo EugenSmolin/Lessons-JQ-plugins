@@ -167,7 +167,7 @@ window.onload = function () {
   console.log('Количество свойств: ' + counter);*/
 
   // Задачи
-  function isEmpty(obj) {
+  /*function isEmpty(obj) {
     for (var key in obj) {
       return false;
     }
@@ -177,10 +177,10 @@ window.onload = function () {
   var schedule = {};
   console.log(isEmpty(schedule));
   schedule['8:30'] = 'подъем';
-  console.log(isEmpty(schedule));
+  console.log(isEmpty(schedule));*/
 
   // 2
-  "use strict";
+  /*"use strict";
 
   var salaries = {
     "Вася": 100,
@@ -188,7 +188,7 @@ window.onload = function () {
     "Даша": 250
   };
 
-  /*var sum = 0;
+  var sum = 0;
   for (var key in salaries) {
     sum += salaries[key];
   }
@@ -196,8 +196,7 @@ window.onload = function () {
   console.log(sum);*/
 
   // 3
-
-  var maxSum = 0;
+  /*var maxSum = 0;
   var name = '';
   for (var key in salaries) {
     if (maxSum < salaries[key]) {
@@ -205,7 +204,41 @@ window.onload = function () {
       name = key;
     }
   }
-  console.log(name || 'Нет сотрудников');
+  console.log(name || 'Нет сотрудников');*/
+
+  // 4
+  /*var menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+  };
+
+  function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)
+  }
+
+  function multiplyNumeric(obj) {
+    for (var key in obj) {
+      if (isNumeric(obj[key])) {
+        obj[key] *= 2;
+      }
+    }
+  }
+
+  multiplyNumeric(menu);
+
+  console.log(menu);*/
+
+  // Объекты: передача по ссылке
+  var user = {
+    name: 'Vasia'
+  };
+  var admin = user; // ссылка на объект
+  admin.name = 'Jack';
+  console.log(user);
+  console.log(admin);
+
+  
 
 
 };
