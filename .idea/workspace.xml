@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b266500-666b-4b54-8375-4b919d114300" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Поиск русских букв/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Поиск русских букв/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,8 +29,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="544">
+              <caret line="210" column="2" lean-forward="true" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -167,28 +166,28 @@
       <option name="presentableId" value="Default" />
       <updated>1527235838722</updated>
       <workItem from="1527235842889" duration="1846000" />
-      <workItem from="1543828411491" duration="83443000" />
+      <workItem from="1543828411491" duration="89574000" />
+      <workItem from="1544185535731" duration="3770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85289000" />
+    <option name="totallyTimeSpent" value="95190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19660194" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32896304" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1933657" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32896304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32896304" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -197,6 +196,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32896304" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +211,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3154">
+          <caret line="166" column="48" lean-forward="true" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - решает(практика)/17-ЧислоВОбъект/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -278,11 +292,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Игры JS/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1940">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1940" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/01-Основы/index.html">
@@ -406,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript - (learn.javascript)/03-Структуры данных/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        <state relative-caret-position="544">
+          <caret line="210" column="2" lean-forward="true" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
         </state>
       </provider>
     </entry>

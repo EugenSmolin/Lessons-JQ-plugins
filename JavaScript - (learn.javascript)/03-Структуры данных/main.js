@@ -77,7 +77,7 @@ window.onload = function () {
   console.log('Я'.charCodeAt(0));*/
 
   // 1 задача
-  function ucFirst(_str) {
+  /*function ucFirst(_str) {
     if (!_str) return _str;
     return _str[0].toUpperCase() + _str.slice(1);
   }
@@ -101,6 +101,112 @@ window.onload = function () {
   console.log(checkSpam('buy ViAgRA now'));
   console.log(checkSpam('free xxxxx'));
   console.log(checkSpam("innocent rabbit"));
+
+  // 3 задача
+  function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+      str.slice(0, maxlength - 3) + '...' : str;
+  }
+
+  console.log(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20));
+  console.log(truncate('Всем привет!', 20));
+
+  // 4 задача
+  function extractCurrencyValue(str) {
+    return +str.slice(1);
+  }
+
+  console.log(extractCurrencyValue('$250'));
+  console.log(extractCurrencyValue('$1204'));*/
+
+  // Объекты как ассоциативные массивы
+  /*var obj = {
+    name: 'Евгений',
+    work: true
+  };
+
+  console.log(obj);
+  console.log('name' in obj); // true
+  console.log('age' in obj); // false
+  delete obj.work; // удаляет элемент
+  console.log(obj);
+
+  var person = {};
+  person.age = 25;
+  var key = 'age';
+
+  console.log(person[key]);
+
+  // Задача
+  var user = {
+    name: 'Вася',
+    surname: 'Петров'
+  };
+
+  console.log(user);
+
+  user.name = 'Сергей';
+  delete user.surname;
+
+  console.log(user);*/
+
+
+  // =====
+  /*var menu = {
+    title: 'Menu',
+    width: 300,
+    height: 200
+  };
+  var counter = 0;
+
+  for (var key in menu) {
+    console.log('Свойство: ' + key + ', значение: ' + menu[key]);
+    counter++;
+  }
+
+  console.log('Количество свойств: ' + counter);*/
+
+  // Задачи
+  function isEmpty(obj) {
+    for (var key in obj) {
+      return false;
+    }
+    return true;
+  }
+
+  var schedule = {};
+  console.log(isEmpty(schedule));
+  schedule['8:30'] = 'подъем';
+  console.log(isEmpty(schedule));
+
+  // 2
+  "use strict";
+
+  var salaries = {
+    "Вася": 100,
+    "Петя": 300,
+    "Даша": 250
+  };
+
+  /*var sum = 0;
+  for (var key in salaries) {
+    sum += salaries[key];
+  }
+
+  console.log(sum);*/
+
+  // 3
+
+  var maxSum = 0;
+  var name = '';
+  for (var key in salaries) {
+    if (maxSum < salaries[key]) {
+      maxSum = salaries[key];
+      name = key;
+    }
+  }
+  console.log(name || 'Нет сотрудников');
+
 
 };
 
