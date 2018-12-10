@@ -230,15 +230,148 @@ window.onload = function () {
   console.log(menu);*/
 
   // Объекты: передача по ссылке
-  var user = {
+  /*var user = {
     name: 'Vasia'
   };
   var admin = user; // ссылка на объект
   admin.name = 'Jack';
   console.log(user);
-  console.log(admin);
+  console.log(admin);*/
 
-  
+  /*var user = {
+    name: 'Вася',
+    age: 21
+  };
+  var clone = {};
+  for (var key in user) {
+    clone[key] = user[key];
+  }
+  clone.name = 'Петя';
+  console.log(user);
+  console.log(clone);
+
+  var time = {
+    year: 2345,
+    month: 11,
+    day: 10,
+    hour: 11,
+    minute: 12,
+    second: 13,
+    microsecond: 123456
+  };
+
+  console.log(time); // (*)
+  time.microsecond++; // (**)
+
+  console.log(time);
+  time.microsecond++;
+
+  console.log(time);
+  time.microsecond++;*/
+
+
+  // Массивы с числовыми индексами
+  // pop - Удаляет последний элемент из массива и возвращает его
+  // push - Добавляет элемент в конец массива
+  // shift - Удаляет из массива первый элемент и возвращает его
+  // unshift - Добавляет элемент в начало массива
+
+  // Задачи
+  /*var styles = ['Джаз', 'Блюз'];
+  console.log(styles);
+  styles.push('Рок-н-ролл');
+  console.log(styles);
+  styles[styles.length - 2] = 'Классика';
+  console.log(styles);
+  console.log(styles.shift());
+  console.log(styles);
+  styles.unshift('Рэп', 'Регги');
+  console.log(styles);*/
+
+  // 2
+  /*var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+  var rand = Math.floor(Math.random() * arr.length);
+  console.log(arr[rand]);*/
+
+  // 3
+  /*var arr = [];
+  while (true) {
+    var num = prompt('Введите число', '');
+    // console.log(isNaN(num)); // возвращает true при num = не число
+    if (num == null || num == '' || isNaN(num)) {
+      break;
+    }
+    arr.push(+num);
+  }
+  console.log(arr);
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);*/
+
+  // 4
+  /*var arr = ["test", 2, 1.5, false];
+
+  function find(_arr, _value) {
+    if (_arr.indexOf) {
+      return _arr.indexOf(_value);
+    }
+
+    for (var i = 0; i < _arr.length; i++) {
+      if (_arr[i] === _value) return i;
+    }
+
+    return -1;
+  }
+
+  console.log(find(arr, "test")); // 0
+  console.log(find(arr, 2)); // 1
+  console.log(find(arr, 1.5)); // 2
+  console.log(find(arr, 0)); // -1*/
+
+  // создаем пустой массив и проверяем поддерживается ли indexOf браузером
+  var arr = ["test", 2, 1.5, false];
+
+  if ([].indexOf) {
+    var find = function (arr, value) {
+      return arr.indexOf(value);
+    }
+  } else {
+    var find = function (arr, value) {
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === value) return i;
+      }
+      return -1;
+    }
+  }
+
+  console.log('value - ' + find(arr, 1.5)); // 2
+
+  // 5
+  var arr = [5, 4, 3, 8, 0, 6, 4];
+  function filterRange(arr, a, b) {
+    var filtered = [];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] >= a && arr[i] <= b ) {
+        filtered.push(arr[i]);
+      }
+    }
+    return filtered;
+  }
+
+  console.log(filterRange(arr, 3, 6));
+  // теперь filtered = [5, 4, 3]
+  // arr не изменился
+
+
+  // Массивы: методы
+  // split()
+  var names = 'Маша, Петя, Марина, Николай';
+  var arr = names.split(', ');
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 
 
 };
