@@ -1,13 +1,13 @@
 [
 	{
-		name: 'G-Shock',
-		cost: 45,
-		color: 'blue'
+		"name": "G-Shock",
+		"cost": 45,
+		"color": "blue"
 	},
 	{
-		name: 'G-Shock 8000',
-		cost: 45,
-		color: 'red'
+		"name": "G-Shock 8000",
+		"cost": 45,
+		"color": "red"
 	}
 
 ]
